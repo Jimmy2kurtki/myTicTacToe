@@ -15,7 +15,8 @@ public class TicTacToe {
                     game.setStrPlayer("O");
                 }
                 if (game.getQuantityPlayers() == 1 && game.getStrPlayer().equals("O")) {
-                    game.botStep();
+                    BotStep bot = new BotStep();
+                    bot.botStep();
                     System.out.println("Бот ходит на поле " + game.getStep());
                 } else {
                     game.visual();
