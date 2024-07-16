@@ -11,15 +11,15 @@ public class Back {
     private int quantityPlayers;
     private int difficulty;
 
-    public int getQuantityPlayers(){
+    int getQuantityPlayers(){
         return quantityPlayers;
     }
 
-    public void setStrPlayer(String strPlayer) {
+    void setStrPlayer(String strPlayer) {
         this.strPlayer = strPlayer;
     }
 
-    public String getStrPlayer() {
+    String getStrPlayer() {
         return strPlayer;
     }
 
@@ -88,7 +88,7 @@ public class Back {
         }
     }
 
-    public void setStep(){
+    void setStep(){
         int userStep = 1;
         do{
             int checkStep;
@@ -142,11 +142,11 @@ public class Back {
         step = userStep;
     }
 
-    public int getStep() {
+    int getStep() {
         return step;
     }
 
-    public  int check(){
+    int check(){
         int result;
         if (gameMatrice[0][0].equals(gameMatrice[0][1]) && gameMatrice[0][1].equals(gameMatrice[0][2]) && !gameMatrice[0][2].equals(".")
                 || gameMatrice[1][0].equals(gameMatrice[1][1]) && gameMatrice[1][1].equals(gameMatrice[1][2]) && !gameMatrice[1][2].equals(".")
@@ -167,11 +167,11 @@ public class Back {
         return result;
     }
 
-    public void setGameMatrice(int z, int x, String c) {
+    void setGameMatrice(int z, int x, String c) {
         gameMatrice[z][x] = c;
     }
 
-    public void botStep(){
+    void botStep(){
         int chanseStep = r.nextInt(100) + 1;
         if (difficulty == 1){
             if (chanseStep <= 65) {
@@ -194,7 +194,7 @@ public class Back {
         }
     }
 
-    public void easyBotStep(){
+    void easyBotStep(){
         int checkBotStep;
         int botStep;
         do {
@@ -211,7 +211,7 @@ public class Back {
         step = botStep;
     }
 
-    public void hardBotStep(){
+    void hardBotStep(){
         int hardBotStep = 0;
         int chanse = r.nextInt(12) + 1;
         if        (gameMatrice[0][0].equals(".") && gameMatrice[0][1].equals("O") && gameMatrice[0][2].equals("O")) {
