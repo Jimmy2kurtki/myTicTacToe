@@ -148,7 +148,7 @@ public class Back {
 
     int check() {
         int result;
-        if (gameMatrice[0][0].equals(gameMatrice[0][1]) && gameMatrice[0][1].equals(gameMatrice[0][2]) && !gameMatrice[0][2].equals(".")
+        if        (gameMatrice[0][0].equals(gameMatrice[0][1]) && gameMatrice[0][1].equals(gameMatrice[0][2]) && !gameMatrice[0][2].equals(".")
                 || gameMatrice[1][0].equals(gameMatrice[1][1]) && gameMatrice[1][1].equals(gameMatrice[1][2]) && !gameMatrice[1][2].equals(".")
                 || gameMatrice[2][0].equals(gameMatrice[2][1]) && gameMatrice[2][1].equals(gameMatrice[2][2]) && !gameMatrice[2][2].equals(".")
                 || gameMatrice[0][0].equals(gameMatrice[1][0]) && gameMatrice[1][0].equals(gameMatrice[2][0]) && !gameMatrice[2][0].equals(".")
@@ -158,8 +158,8 @@ public class Back {
                 || gameMatrice[0][2].equals(gameMatrice[1][1]) && gameMatrice[1][1].equals(gameMatrice[2][0]) && !gameMatrice[2][0].equals(".")) {
             result = 2;
         } else if (!gameMatrice[0][0].equals(".") && !gameMatrice[0][1].equals(".") && !gameMatrice[0][2].equals(".") &&
-                !gameMatrice[1][0].equals(".") && !gameMatrice[1][1].equals(".") && !gameMatrice[1][2].equals(".") &&
-                !gameMatrice[2][0].equals(".") && !gameMatrice[2][1].equals(".") && !gameMatrice[2][2].equals(".")) {
+                   !gameMatrice[1][0].equals(".") && !gameMatrice[1][1].equals(".") && !gameMatrice[1][2].equals(".") &&
+                   !gameMatrice[2][0].equals(".") && !gameMatrice[2][1].equals(".") && !gameMatrice[2][2].equals(".")) {
             result = 1;
         } else {
             result = 0;

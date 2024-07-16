@@ -41,7 +41,7 @@ public class BotStep extends Back {
     }
 
     void hardBotStep(){
-        int hardBotStep = 0;
+        int hardBotStep;
         int chanse = r.nextInt(12) + 1;
         if        (gameMatrice[0][0].equals(".") && gameMatrice[0][1].equals("O") && gameMatrice[0][2].equals("O")) {
             hardBotStep = 7;
@@ -232,6 +232,7 @@ public class BotStep extends Back {
                 hardBotStep = 3;
             } else {
                 easyBotStep();
+                hardBotStep = step;
             }
         }
         oldStep[hardBotStep] = hardBotStep;
