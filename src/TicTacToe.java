@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class TicTacToe {
     public static void main(String[] args) {
-        Front game = new Front();
+        Back game = new Back();
         Scanner s = new Scanner(System.in);
         String answerUser;
         do {

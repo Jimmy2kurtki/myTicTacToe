@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Front {
+public class Back {
     Scanner s = new Scanner(System.in);
     private final String[][] gameMatrice = new String[3][3];
     private int step;
